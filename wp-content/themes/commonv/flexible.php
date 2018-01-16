@@ -10,6 +10,7 @@ if( have_rows('content_repeater') ):
     while ( have_rows('content_repeater') ) : the_row();
 	//i just added this
   //i just added this locally
+  //added to master
         ?>
   <section>
                <?php
