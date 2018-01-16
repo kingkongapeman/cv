@@ -25,7 +25,6 @@
 	<?php the_field('google_analytics','option');?>
     <?php wp_head();?>
   </head>
-
 <body <?php body_class(); ?>>
   <div class="shutter"></div><div class="shutter"></div>
   <div id="wptime-plugin-preloader"></div>
