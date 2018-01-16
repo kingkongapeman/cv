@@ -3,22 +3,14 @@
 Template Name: Flexible Layout
 */
 ?>
-
 <?php get_header();?>
-
-
-
-
 <main class="flexible">
-
 <?php
 if( have_rows('content_repeater') ):
     while ( have_rows('content_repeater') ) : the_row();
         ?>
-
   <section>
-
-                <?php
+               <?php
                 if( have_rows('content') ):
                     while ( have_rows('content') ) : the_row();
                          if( get_row_layout() == 'photo_bg_section' ):?>  <!-- Photo -->
@@ -189,9 +181,6 @@ if( have_rows('content_repeater') ):
        </div>
      <?php endif; ?>
  </div>
-                       
-                       
-
                         <? elseif(get_row_layout() == "gallery_slider"): ?> <!-- Gallery Slider Field -->
                             <?php $imagesSlider = get_sub_field('gallery_slider');
                               if( $imagesSlider ): ?> 
